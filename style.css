@@ -1,22 +1,129 @@
-body {
-    background-color: rgb(219, 187, 250);
-    margin-left: 3rem;
+:root {
+    --color-default: #FDF0D5;
+    --color-first: #003049;
+    --color-second: #780000;
+    --color-third: #669BBC;
+    --color-fourth: #C1121F;
+    --gradiente-color-default: linear-gradient(#669BBC 10%, #FDF0D5 90%);
+    --gradiente-color-second: linear-gradient(#C1121F 10%, #FDF0D5 90%);
+
+    --title-font: "Roboto Slab", serif;
+    --text-font: "Crimson Text", serif;
 }
 
-.lista {
+body {
+    background: var(--gradiente-color-default);
+}
+
+/* Header */
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 0;
+}
+
+.img-escudo {
+    width: 100px;
+}
+
+.title {
+    font-family: var(--title-font);
+    font-size: 3rem;
+    font-weight: 500;
+    color: var(--color-first);
+}
+
+.text-header {
+    font-family: var(--text-font);
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--color-first);
+    margin: 0.6rem 0;
+}
+
+.nav-list {
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    width: 300px;
+    gap: 40px;
+    border-top: 1px solid var(--color-first);
 }
 
-a{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.nav-list_link {
     text-decoration: none;
+    font-family: var(--text-font);
+    color: var(--color-second);
     font-size: 1.5rem;
 }
 
-h1 {
-    font-size: 3rem;
-    font-family: "roboto slab", serif;
-    color: rgb(53, 6, 97);
+/* Main */
+
+.main {
+    width: 80%;
+    margin: 0 auto;
+    padding: 3rem 0;
+}
+
+.title-2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.article {
+    padding: 2rem;
+    margin: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+    background: var(--gradiente-color-second);
+    border: 1px solid none;
+    border-radius: 48px;
+}
+
+.article_text {
+    font-family: var(--text-font);
+    color: var(--color-first);
+    font-weight: 600;
+    font-size: 1.7rem;
+    width: 60%;
+}
+
+.titles {
+    background: var(--gradiente-color-default);
+    width: 25%;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 48px 48px 0 0;
+}
+
+.titles_list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.list-titles_elements {
+    font-family: var(--text-font);
+    color: var(--color-second);
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.img-escudo-2{
+    width: 20%;
+}
+
+.article_text-2 {
+    width: 70%;
+}
+
+footer {
+    background-color: var(--color-third);
+    text-align: center;
+    font-size: 1.5rem;
+    height: 3rem;
+    padding-top: 1.2rem;
+    font-family: var(--text-font);
 }

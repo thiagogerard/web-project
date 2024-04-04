@@ -3,41 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
-    <title>CCTB project</title>
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <title>EC.Bahia</title>
+    <link rel="icon" type="image/x-icon" href="./imgs/pngwing.com.png">
 </head>
 <body>
-    <header>
+    <header class="header">
+        <img class="img-escudo" src="./imgs/pngwing.com.png" alt="Escudo do Bahia">
+        <h1 class="title">Esporte Clube Bahia</h1>
+        <p class="text-header">Brazil's biggest northeastern team</p>
         <nav>
-            <section>
-                <h1>CCTB</h1>
-                <p>Hello World</p>
-                <ul class="lista" id="lista">
-                    <li><a href="https://g.co/kgs/QSoZvd3">google</a></li>
-                    <li><a href="https://twitter.com/">twiter</a></li>
-                    <li><a href="https://www.instagram.com/">instagram</a></li>
-                </ul>
-            </section> 
-        </nav>       
+            <ul class="nav-list">
+                <li><a class="nav-list_link" href="">Home</a></li>
+                <li><a class="nav-list_link" href="">History</a></li>
+                <li><a class="nav-list_link" href="">Titles</a></li>
+                <li><a class="nav-list_link" href="">Fans</a></li>
+                <li><a class="nav-list_link" href="">Stadium</a></li>
+            </ul>
+        </nav>
     </header>
-    <main>
-        <div>
-            <article>
-                <ol>
-                    <li><strong>item 1</strong></li>
-                    <li><em>item 2</em></li>
-                    <li><spam>item 3</spam></li>
-                </ol>
-                <hr>
-                <img src="https://canvascctb.s3.ca-central-1.amazonaws.com/account_1/attachments/92/CCTB_logo_1_RGB.png" alt="logo cctb">
-                <br>
-            </article>    
-        </div>   
+    <main class="main">
+        <h2 class="title title-2">Welcome to Bahia's House!</h2>
+        <article class="article article-1">
+            <p class="article_text">On January 1, 1931, Esporte Clube Bahia was finally founded, under the slogan "Born to win", at a meeting in house number 57 on Rua Carlos Gomes, in Salvador, attended by liberal professionals, civil servants, journalists, micro-entrepreneurs and students.  The doctor Waldemar Costa was the first president.</p>
+            <div class="titles">
+                <h3 class="title title-titulos">Titles</h3>
+                <ul class="titles_list">
+                    <li class="list-titles_elements">Brasileirão 1959</li>
+                    <li class="list-titles_elements">Brasileirão 1988</li>
+                    <li class="list-titles_elements">Copa do Nordeste 2001</li>
+                    <li class="list-titles_elements">Copa do Nordeste 2002</li>
+                    <li class="list-titles_elements">Copa do Nordeste 2017</li>
+                    <li class="list-titles_elements">Copa do Nordeste 2021</li>
+                </ul>
+            </div>
+        </article>
+        <article class="article">
+            <img class="img-escudo-2" src="./imgs/pngwing.com.png" alt="Escudo do Bahia">
+            <p class="article_text article_text-2">The 1959 Brazil Cup was the first major national tournament and brought together the top 15 state champions. In addition to Bahia, who won the competition, Santos, São Paulo, Vasco da Gama, Atlético/PR, Atlético/MG, Grêmio, Sport/PE, Rio Branco/ES, Hercílio Luz/SC, Auto Esporte/PB, ABC/RN, Ceará/CE, CSA and Tuna Luso competed.
+                During the campaign, the Tricolor eliminated CSA, Ceará, Sport, Vasco and Santos in back-to-back matches. Esquadrão de Aço played 14 games, won nine, drew two and lost three, scoring 25 goals and conceding 18. Esquadrão's number 9, Léo Briglia, was also the competition's top scorer, with eight goals.</p>
+        </article>
     </main>
     <footer>
-        copyright.
+        Rights reserved
     </footer>
 </body>
 </html>
